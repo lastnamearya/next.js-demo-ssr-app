@@ -6,7 +6,19 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export async function getServerSideProps() {
+  const res = await fetch("https://api.github.com/repos/hasura/graphql-engine");
+
+  const data = await res.json();
+
+  return {
+    props: {
+      githubStars: data,
+    },
+  };
+}
+
+export default function Home({ githubStars }) {
   return (
     <>
       <Head>
@@ -18,6 +30,9 @@ export default function Home() {
       <main className={styles.main}>
         <div>
           <h1 className={inter.className}>Instant GraphQL on all your data</h1>
+          <h2
+            className={inter.className}
+          >{`Github Stars Count - ${githubStars?.stargazers_count}`}</h2>
           <Link href="/about">
             <button className={inter.className}>About</button>
           </Link>

@@ -1,11 +1,34 @@
 .main {
   display: flex;
   /* flex-direction: column; */
-  justify-content: center;
   align-items: flex-start;
   padding: 6rem;
   min-height: 100vh;
   width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h1 {
+  margin-bottom: 16px;
+}
+
+.main h2 {
+  font-weight: 600;
+  color: #1e56e3;
+}
+
+.main button {
+  background: #1e56e3;
+  color: #fff;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  height: 44px;
+  border: none;
+  cursor: pointer;
 }
 
 .main button {
