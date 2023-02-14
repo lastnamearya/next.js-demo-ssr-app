@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 // import Image from "next/image";
 import { Inter } from "@next/font/google";
@@ -17,6 +18,12 @@ export default function About() {
       </Head>
       <main className={styles.main}>
         <div>
+          <Image
+            src="https://res.cloudinary.com/dh8fp23nd/image/upload/v1676379224/main-web/download_w0rnm7.svg"
+            alt="hasura-icon"
+            width="116"
+            height="35"
+          />
           <h1 className={inter.className}>About Hasura</h1>
           <Link href="/">
             <button className={inter.className}>Homepage</button>
