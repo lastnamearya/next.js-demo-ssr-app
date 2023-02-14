@@ -12,7 +12,13 @@
 
 .main h1 {
   font-size: 48px;
-  margin: 16px auto;
+  margin: 14px auto;
+}
+
+.main p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
 }
 
 .main h2 {

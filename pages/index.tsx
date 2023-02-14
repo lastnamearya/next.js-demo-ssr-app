@@ -36,6 +36,7 @@ export default function Home({ githubStars }: any) {
             width="116"
             height="35"
           />
+          <p className={inter.className}>Next.js Sample App</p>
           <h1 className={inter.className}>Instant GraphQL on all your data</h1>
           <h2
             className={inter.className}
