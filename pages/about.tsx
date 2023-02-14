@@ -6,7 +6,7 @@ import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
@@ -17,9 +17,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <h1 className={inter.className}>Instant GraphQL on all your data</h1>
-          <Link href="/about">
-            <button className={inter.className}>About</button>
+          <h1 className={inter.className}>About Hasura</h1>
+          <Link href="/">
+            <button className={inter.className}>Homepage</button>
           </Link>
         </div>
       </main>
