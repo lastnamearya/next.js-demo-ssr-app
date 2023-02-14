@@ -18,7 +18,7 @@ export async function getServerSideProps() {
   };
 }
 
-export default function Home({ githubStars }) {
+export default function Home({ githubStars }: any) {
   return (
     <>
       <Head>
